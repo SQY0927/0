@@ -1,0 +1,66 @@
+{
+"update_url": "",
+
+  "action": {
+    "default_icon": {
+      "128": "/icons/bilibili_active_128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "default_locale": "zh_CN",
+  "description": "__MSG_extDes__",
+  "icons": {
+    "128": "/icons/bilibili_active_128.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "js": [
+        "/js/fix-script.js"
+      ],
+      "matches": [
+        "http://*.bilibili.com/*",
+        "https://*.bilibili.com/*"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "all_frames": false,
+      "js": [
+        "/js/content-script.js"
+      ],
+      "matches": [
+        "http://*.bilibili.com/*",
+        "https://*.bilibili.com/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "host_permissions": [
+    "http://*.bilibili.com/*",
+    "https://*.bilibili.com/*"
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "cookies"
+  ],
+  "version": "1.0.0",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/ajax_listener.js"
+      ],
+      "matches": [
+        "http://*.bilibili.com/*",
+        "https://*.bilibili.com/*"
+      ]
+    }
+  ],
+  "homepage_url": ""
+}

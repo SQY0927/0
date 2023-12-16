@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Svelte app</title>
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/bundle.css" />
+  <link rel="stylesheet" href="css/bili.css" />
+
+  <!-- <script defer src="/dist/bundle.js"></script> -->
+</head>
+
+<body>
+  <main class="container flex flex-row items-center py-4">
+    <div class="review_show" id="review_show">
+      <div class="dialog">
+        <div class="dialog_img">
+          <div class="img_content"><img src="icons/star.jpeg" class="dialog_content_img"></div>
+          <span class="five_star_span">亲，给个5星好评吧～</span>
+        </div>
+        <div class="close" id="close">x</div>
+        <div class="dialog_line"></div>
+        <div class="select">
+          <div class="refuse" id="refuse"><span class="refuse_span">残忍拒绝</span><img src="icons/refuse.png"
+              class="refuse_img"></div>
+          <div class="review">
+            <div id="click_review" class="click_review">
+              <span class="review_span">去评论</span>
+              <svg t="1672149083239" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="4519" width="16" height="16">
+                <path
+                  d="M837.9904 570.0608H124.5696a29.0304 29.0304 0 0 1-29.0304-29.0304V482.9696a29.0304 29.0304 0 0 1 29.0304-29.0304h713.4208z"
+                  fill="#337511" p-id="4520"></path>
+                <path
+                  d="M561.3056 808.96l-40.96-40.96a28.928 28.928 0 0 1 0-40.96l215.04-215.04-215.04-215.04a28.9792 28.9792 0 0 1 0-40.96l40.96-40.96a28.9792 28.9792 0 0 1 40.96 0l296.96 296.96-296.96 296.96a28.9792 28.9792 0 0 1-40.96 0z"
+                  fill="#337511" p-id="4521"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guid_dialog" id="guid_dialog">
+      <div class="dialog">
+        <div class="d-content">
+          <div class="top">
+            <svg t="1678349885189" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="19612" width="16" height="16">
+              <path
+                d="M795.244475 304.298523c7.31311 208.569908-67.57314 242.722134-67.57314 242.722134C801.460619 206.302844 369.913974 0 369.913974 0l36.565552 102.383546c80.444214 291.719974-55.067721 356.660394-55.067721 356.660393 12.505419-182.315842-112.6219-207.399811-112.6219-207.39981a161.912264 161.912264 0 0 1-16.235105 176.684747A631.560214 631.560214 0 0 0 121.19509 602.673427a321.776857 321.776857 0 0 0 115.108358 336.403079 439.591066 439.591066 0 0 0 196.430145 79.786034 446.904176 446.904176 0 0 0 185.387348-10.677141 401.489761 401.489761 0 0 0 254.423111-202.646289C995.989355 569.398775 795.536999 304.298523 795.536999 304.298523z m-143.922013 501.45998a158.840758 158.840758 0 0 1-210.105661 115.108358 116.059062 116.059062 0 0 1-70.937171-84.393294 199.794176 199.794176 0 0 1 82.199361-155.111072c14.626221-12.286025 107.575854-92.145191 97.556892-182.16958 0 0 133.82992 174.344552 101.286579 306.565588z m0 0"
+                fill="#E90021" p-id="19613"></path>
+            </svg>
+            <span class="title">试试热门插件</span>
+          </div>
+          <div class="middle1">
+            <div class="img"><img src="icons/tabtidy.png"></div>
+            <div class="ext-name">Tabtidy - 个性化标签页管理器</div>
+          </div>
+          <div class="middle2">
+            <span id="extdesc" class="ext-desc">想要快速管理和访问B站视频、一键保存B站视频浏览页、一键去掉B站专栏复制时的小尾巴吗？试试它！</span>
+          </div>
+          <div class="bott">
+            <div id="later" class="later">下次再说</div>
+            <div id="gotry" class="go-try">去试试</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="flex flex-col items-center px-4 flex-1">
+      <div style="text-align:center" class="videoTitle text-base svelte-4mjivf">
+        此页面没有可下载的内容~
+      </div>
+      <div class="url text-xs my-4 svelte-4mjivf">
+
+      </div>
+      <button class="download button text-base text-white py-1 text-center rounded-sm svelte-4mjivf"
+        target="_blank">下载</button>
+    </div>
+  </main>
+
+</body>
+
+</html>
